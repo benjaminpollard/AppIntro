@@ -59,10 +59,10 @@ class DefaultIndicatorController implements IndicatorController {
             int drawableId = (i == index) ?
                     (R.drawable.indicator_dot_white) : (R.drawable.indicator_dot_grey);
             Drawable drawable = ContextCompat.getDrawable(mContext, drawableId);
-            if (selectedDotColor != DEFAULT_COLOR && i == index)
-                drawable.mutate().setColorFilter(selectedDotColor, PorterDuff.Mode.SRC_IN);
-            if (unselectedDotColor != DEFAULT_COLOR && i != index)
-                drawable.mutate().setColorFilter(unselectedDotColor, PorterDuff.Mode.SRC_IN);
+//            if (selectedDotColor != DEFAULT_COLOR && i == index)
+//                drawable.mutate().setColorFilter(selectedDotColor, PorterDuff.Mode.SRC_IN);
+//            if (unselectedDotColor != DEFAULT_COLOR && i != index)
+//                drawable.mutate().setColorFilter(unselectedDotColor, PorterDuff.Mode.SRC_IN);
             mDots.get(i).setImageDrawable(drawable);
         }
     }

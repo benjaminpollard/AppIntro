@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="#222222">
+    android:background="@android:color/transparent"
+    >
 
     <com.github.paolorotolo.appintro.AppIntroViewPager
         android:id="@+id/view_pager"
@@ -24,18 +25,19 @@
         <TextView
             android:id="@+id/bottom_separator"
             android:layout_width="fill_parent"
-            android:layout_height="1px"
-            android:background="#55000000" />
+            android:layout_height="0px"
+            android:background="#55000000"
+            tools:ignore="Suspicious0dp" />
 
         <FrameLayout
             android:id="@+id/bottomContainer"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="30dp">
 
             <FrameLayout
                 android:id="@+id/indicator_container"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layoutDirection="ltr"/>
 
@@ -43,19 +45,19 @@
                 android:id="@+id/skip"
                 style="@style/AppIntroButtonStyleCompat"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="30dp"
                 android:layout_gravity="start"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
                 android:minWidth="100dp"
                 android:text="@string/app_intro_skip_button"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/black" />
 
             <ImageButton
                 android:id="@+id/back"
                 style="@style/AppIntroButtonStyleCompat"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="30dp"
                 android:layout_gravity="start"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
@@ -68,7 +70,7 @@
                 android:id="@+id/next"
                 style="@style/AppIntroButtonStyleCompat"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="30dp"
                 android:layout_gravity="end"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
@@ -80,13 +82,13 @@
                 android:id="@+id/done"
                 style="@style/AppIntroButtonStyleCompat"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="30dp"
                 android:layout_gravity="end"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:minWidth="100dp"
                 android:text="@string/app_intro_done_button"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:visibility="gone" />
         </FrameLayout>
     </LinearLayout>
